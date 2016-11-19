@@ -525,6 +525,7 @@
 				1925066B1DDED353001D7285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1925066C1DDED353001D7285 /* Build configuration list for PBXNativeTarget "MXScoreVIewTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +534,7 @@
 				1925066E1DDED353001D7285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1925066F1DDED353001D7285 /* Build configuration list for PBXNativeTarget "MXScoreVIewUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +543,7 @@
 				192506711DDED353001D7285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

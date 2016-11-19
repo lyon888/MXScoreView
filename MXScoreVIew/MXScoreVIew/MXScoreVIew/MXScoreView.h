@@ -1,10 +1,9 @@
 //
-//  MXScoreView.h
-//  MXScoreVIew
+// @author 刘智援 2016-11-19
+// @简书地址:    http://www.jianshu.com/users/0714484ea84f/latest_articles
+// @Github地址: https://github.com/lyoniOS
 //
-//  Created by 广东众网合一网络科技有限公司 on 16/11/18.
-//  Copyright © 2016年 lyoniOS. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 
@@ -19,8 +18,6 @@
 
  @param frame           尺寸
  @param totalScoreValue 总分
-
- @return self
  */
 - (instancetype)initWithFrame:(CGRect)frame totalScoreValue:(CGFloat)totalScoreValue;
 /**

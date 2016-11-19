@@ -1,16 +1,15 @@
 //
-//  MXScoreView.m
-//  MXScoreVIew
+// @author 刘智援 2016-11-19
+// @简书地址:    http://www.jianshu.com/users/0714484ea84f/latest_articles
+// @Github地址: https://github.com/lyoniOS
 //
-//  Created by 广东众网合一网络科技有限公司 on 16/11/18.
-//  Copyright © 2016年 lyoniOS. All rights reserved.
-//
+
 
 #import "MXScoreView.h"
 
 static CGFloat kSingleScoreValueImageViewWidth = 0;//1分的图片宽度
-static NSString *const kDefaultBgImageName = @"MXScoreView.bundle/icon_bgView";//默认背景图片名称
-static NSString *kDefaultPreImageName = @"MXScoreView.bundle/icon_preView";//默认前景图片名称
+static NSString *const kDefaultBgImageName  = @"MXScoreView.bundle/icon_bgView";//默认背景图片名称
+static NSString *kDefaultPreImageName       = @"MXScoreView.bundle/icon_preView";//默认前景图片名称
 
 @interface MXScoreView ()
 
@@ -86,9 +85,13 @@ static NSString *kDefaultPreImageName = @"MXScoreView.bundle/icon_preView";//默
     
     //预防传入的分值大于总分值
     currentScoreValue = currentScoreValue > _totalScoreValue ? _totalScoreValue : currentScoreValue;
+    /**
+     处理绘画因传入宽度为0控制器输出的警告
+     */
+    currentScoreValue = currentScoreValue == 0.0 ? 0.1 : currentScoreValue;
     
     //获取视图原始尺寸
-    CGRect preImageViewFrame     = self.bounds;
+    CGRect preImageViewFrame     = self.preImageView.frame;
     preImageViewFrame.size.width = kSingleScoreValueImageViewWidth * currentScoreValue;
     
     //开启图形上下文

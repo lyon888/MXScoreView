@@ -40,6 +40,7 @@
 {
     if (!_scoreView) {
         _scoreView =  [[MXScoreView alloc]initWithFrame:CGRectMake(100, 100, 174, 25) totalScoreValue:10];
+        [_scoreView configBgImageName:@"bgImg" preImageName:@"preImg"];
     }
     return _scoreView;
 }
